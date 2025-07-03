@@ -10,3 +10,5 @@ export const getVehiculo = (id) => Api.get(`/${id}`);
 export const updateVehiculo = (id, vehiculo) => Api.put(`/${id}/`, vehiculo);
 
 export const createVehiculo = (vehiculo) => Api.post("/", vehiculo);
+
+export const getAllByFilter = (vehiculo) => Api.post("/", vehiculo);
